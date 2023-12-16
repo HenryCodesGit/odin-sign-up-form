@@ -149,6 +149,7 @@ body{
     
     footer{
         margin: 10px 20px;
+        font-size: 1.25em;
     }
 }
 
@@ -160,3 +161,10 @@ body{
     flex: 0.25 0.25 0;
 }
 
+input:valid{
+    border: 3px solid green;
+}
+
+input:invalid{
+    border: 3px solid red;
+}

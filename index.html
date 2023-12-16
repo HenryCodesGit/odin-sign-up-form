@@ -19,33 +19,32 @@
             Sign up <em>now</em> to get started.
             <br><br><br> 
             You <em>know</em> you want to.
-            <br><br>
-            <br><br>
+            <br><br><br><br>
             Let's do this!
         </div>
-        <form>
+        <form id="sign-up" method="post">
             <ul>
                 <li>
                     <label for="first_name">First Name</label>
-                    <input type="text" id="first_name" name="first_name" required />
+                    <input type="text" id="first_name" name="first_name" placeholder="John" required />
                 </li>
                 <li>
                     <label for="last_name">Last Name</label>
-                    <input type="text" id="last_name" name="last_name" required />
+                    <input type="text" id="last_name" name="last_name" placeholder="Doe" required />
                 </li>
                 <div class="break"></div>
                 <li>
                     <label for="mail">E-mail</label>
-                    <input type="text" id="mail" name="mail" required />
+                    <input type="text" id="mail" name="mail" pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$" placeholder="john.doe@mail.com" required />
                 </li>
                 <li>
                     <label for="number">Phone Number</label>
-                    <input type="text" id="number" name="number" required />
+                    <input type="text" id="number" name="number" pattern="^(\+\d{1,2}\s?)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$" placeholder="+1 548 456 8965" required />
                 </li>
                 <div class="break"></div>
                 <li>
                     <label for="password">Password</label>
-                    <input type="text" id="password" name="password" required />
+                    <input type="password" id="password" name="password" required />
                 </li>
                 <li>
                     <label for="password_confirm"> Confirm Password</label>
