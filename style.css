@@ -43,6 +43,7 @@ body{
     min-width: 600px;
     display: flex;
     align-items: center;
+    justify-content: center;
 
     .banner {
         font-family: bebas-neue-regular, Arial, Helvetica, sans-serif;
@@ -62,11 +63,23 @@ body{
         top: 0.1em;
     }
 
+    .attribution{
+        position: absolute;
+        align-self: flex-end;
+        translate: 0 -.5em;
+        background-color: rgba(0,0,0,0.4);
+        color: rgba(255,255,255,0.5);
+
+        * {
+            color: inherit;
+        }
+    }
+
 }
 
 .form{
     border: 1px solid blue;
-    background-color: gray;
+    background-color: white;
     flex: 2 1 0px;
 
     height: clamp(800px, 100svh, 100svh);
